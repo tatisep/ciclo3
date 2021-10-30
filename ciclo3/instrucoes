@@ -1,0 +1,26 @@
+iniciar package.json
+    -npm init
+instalar express
+    -npm install express --save
+instalar sequelize
+    -npm install --save sequelize
+instalar mysql driver
+    -npm install --save mysql2
+instalar sequelize cli
+    -npm install --save-dev sequelize-cli
+iniciar sequelize cli
+    - npx sequelize-cli init
+criar models
+    -npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string
+fazer migrações
+    -npx sequelize-cli db:migrate
+desfazer migrações
+    -npx sequelize-cli db:migrate:undo
+    ou para desfazer TODAS as migrações já feitas:
+    -npx sequelize-cli db:migrate:undo:all
+instalar nodemon
+    -npm install --save-dev nodemon
+instalar cors
+    -npm install cors
+executar controller com o nodemon
+    -npx nodemon Controller.js

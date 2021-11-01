@@ -6,7 +6,7 @@ module.exports = {
         allowNull : false,
         primaryKey : true,
         type : Sequelize.INTEGER,
-        referencer: {
+        references: {
           model: 'pedidos',
           key : 'id'
         },
